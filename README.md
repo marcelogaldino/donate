@@ -1,13 +1,13 @@
 # Donate 
 
 <p align="center">
-    <img src="/assets/home1.png">
+    <img src="/public/assets/home1.png">
 </p>
 
 ### Add new Donator
 
 <p align="center">
-    <img src="/assets/new_instructor.png">
+    <img src="/public/assets/home2.png">
 </p>
 
 
