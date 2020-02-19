@@ -103,6 +103,7 @@ form button {
 main .donors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px
 }
 
 main h2 span {
@@ -111,6 +112,7 @@ main h2 span {
 
 .donor p {
     margin-top: 24px;
+    margin-bottom: 64px;
     font-size: 14px;
 }
 

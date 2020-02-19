@@ -13,7 +13,7 @@
 <body>
     <header>
         <img 
-            src="assets/logo.png" 
+            src="./assets/logo.png" 
             alt="DOE"
             class="logo"    
         >
@@ -28,7 +28,7 @@
     <section class="form hide">
         <h2>Entre na lista de doadores</h1>
         
-        <form action="/">
+        <form action="/" method="POST">
             <input 
                 type="text" 
                 name="name"
@@ -55,31 +55,22 @@
         <h2>Ultimos <span>doadores<span> </h2>
 
         <section class="donors">
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Marcelo Galdino</p>
-            </div>
+            
+            {% for donor in donors %}
 
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Marcelo Galdino</p>
-            </div>
+                <div class="donor">
+                    <div class="blood">{{ donor.blood }}</div>
+                    <p>{{ donor.name }}</p>
+                </div>
+
+            {% endfor %}
             
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Marcelo Galdino</p>
-            </div>
-            
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Marcelo Galdino</p>
-            </div>
         </section>
     </main>
     
     <footer>Com ❤️ Marcelo Galdino</footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
